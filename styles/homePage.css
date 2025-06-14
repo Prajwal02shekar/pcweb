@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbarContainer {
+    height: 70px;
+    width: 100%;
+    background-image: linear-gradient(#333333 0%, #dd1818 100%);
+
+}
+
+.navbarContainer article {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.navbarContainer article .logoBlock {
+    flex-basis: 10%;
+}
+
+.logoBlock img {
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.navbarContainer article .menuBlock {
+    flex-basis: 80%;
+}
+
+.menuBlock ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.menuBlock ul li {
+    list-style: none;
+}
+
+.menuBlock ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+li:hover {
+    border-bottom: 2px solid white;
+}
+
+.navbarContainer article .cartBlock {
+    flex-basis: 10%;
+    height: 50px;
+    width: 100px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.cartBlock #icons {
+    color: white;
+    padding-top: 25px;
+    padding-right: 10px;
+    font-size: 40px;
+}
+
+.cartBlock {
+    position: relative;
+}
+
+.cartBlock #cart-count {
+    background-color: red;
+    color: #fff;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    padding: 1px 4px;
+    position: absolute;
+    top: 10px;
+}
+
+
+.mainContainer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.mainContainer .AllProducts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.AllProducts aside {
+    background-image: linear-gradient(#333333 0%, #dd1818 100%);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+}
+.AllProducts aside h1{
+    color: #fff;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.product {
+
+    height: 450px;
+    display: inline-block;
+    width: 290px;
+    text-align: center;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    background-color: #ffff;
+
+}
+
+.product img {
+    max-width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    font-size: 25px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+.product button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.product button:hover {
+    background-color: #fff;
+    border: 2px solid #333;
+    color: #333;
+}
