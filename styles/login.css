@@ -1,0 +1,128 @@
+ body {
+     margin: 0;
+     padding: 0;
+     background: radial-gradient(circle at top, #1e1e1e, #000);
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: #fff;
+ }
+
+ #myForm {
+     background-color: #2a2a2a;
+     border: 2px solid #dcb33c;
+     border-radius: 15px;
+     padding: 20px 25px;
+     width: 320px;
+     box-shadow: 0 0 20px rgba(220, 179, 60, 0.5);
+     position: relative;
+     overflow: hidden;
+ }
+
+ #myForm::before {
+     content: "";
+     position: absolute;
+     top: -50%;
+     left: -50%;
+     width: 200%;
+     height: 200%;
+     background: radial-gradient(circle, rgba(255, 0, 0, 0.15), transparent 60%);
+     animation: rotateBg 20s linear infinite;
+     z-index: 0;
+ }
+
+ @keyframes rotateBg {
+     0% {
+         transform: rotate(0deg);
+     }
+
+     100% {
+         transform: rotate(360deg);
+     }
+ }
+
+ fieldset {
+     border: none;
+     position: relative;
+     z-index: 1;
+ }
+
+ .logo {
+     text-align: center;
+     margin-bottom: 15px;
+ }
+
+ .logo img {
+     width: 70px;
+     height: auto;
+     filter: drop-shadow(0 0 5px gold);
+ }
+
+ label {
+     display: block;
+     margin-bottom: 4px;
+     font-weight: bold;
+     color: #dcb33c;
+     font-size: 13px;
+ }
+
+ input {
+     width: 100%;
+     padding: 8px;
+     margin-bottom: 15px;
+     border: 1px solid #555;
+     border-radius: 5px;
+     background-color: #111;
+     color: #fff;
+     font-size: 13px;
+     transition: 0.3s ease-in-out;
+ }
+
+ input:focus {
+     outline: none;
+     border-color: #dcb33c;
+     box-shadow: 0 0 5px rgba(220, 179, 60, 0.6);
+ }
+
+ button {
+     padding: 8px 16px;
+     border: none;
+     border-radius: 20px;
+     font-size: 13px;
+     font-weight: bold;
+     cursor: pointer;
+     margin-right: 10px;
+     transition: all 0.3s ease;
+ }
+
+ button:first-of-type {
+     background-color: #d62828;
+     color: white;
+ }
+
+ button:first-of-type:hover {
+     background-color: #a31919;
+     box-shadow: 0 0 10px #d62828;
+ }
+
+ button:last-of-type {
+     background-color: #444;
+     color: #fff;
+ }
+
+ button:last-of-type:hover {
+     background-color: #666;
+ }
+
+ @media (max-width: 400px) {
+     #myForm {
+         width: 90%;
+         padding: 15px 20px;
+     }
+
+     button {
+         margin-top: 10px;
+         width: 100%;
+     }
+ }

@@ -1,3 +1,4 @@
+</html>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,53 +6,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/signUp.css">
 </head>
 
 <body>
     <form id="myForm">
         <fieldset>
-
-            <label for="email">Email ID</label>
-            <input type="email" id="email" name="email" placeholder="Enter Email ID" required>
+            <div class="logo">
+                <img src="https://logowik.com/content/uploads/images/rcb-royal-challengers-bengaluru6010.logowik.com.webp" alt="RCB Logo">
+            </div>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" placeholder="Enter email ID" required>
             <br><br>
-            <label for="password"> Password</label>
+            <label for="password">Password: </label>
             <input type="password" id="password" name="password" placeholder="Enter Password" required>
             <br><br>
             <button>Login</button>
-            <button> Cancel</button>
+            <button>Cancel</button>
+            <script src="./javascript/login.js"></script>
         </fieldset>
     </form>
-
-    <script>
-
-        let myForm = document.getElementById('myForm')
-        console.log(myForm)
-
-        myForm.addEventListener('submit', (e) => {
-            e.preventDefault()
-            let email = document.getElementById('email').value
-            let password = document.getElementById('password').value
-
-
-            console.log(email, password)
-
-
-            let storedData = localStorage.getItem('formData');
-            console.log(storedData)
-
-            if (storedData) {
-                let parsedData = JSON.parse(storedData)
-                console.log(parsedData)
-                if (email == parsedData.email && password == parsedData.password) {
-                    alert("Login Successfull")
-                    window.location.href='./homePage.html'
-                }
-                else {
-                    alert("Invalid Email or Password")
-                }
-            }
-        })
-    </script>
 </body>
 
 </html>

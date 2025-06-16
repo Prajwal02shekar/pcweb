@@ -4,7 +4,6 @@ let cart = JSON.parse(localStorage.getItem('cart')) || [];
 let cartCount = document.getElementById('cart-count')
 function updateCartCount() {
     cartCount.textContent = cart.length;
-    updateCartCount()
 }
 
 //! targeting all buttons
