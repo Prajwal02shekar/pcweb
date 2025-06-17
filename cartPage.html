@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>Cart Page</h1>
+    <header>
+        <h1>Your Cart Items</h1>
+        <a href="./homePage.html">Back to Shopping</a>
+    </header>
+
+    <main class="cartContainer">
+        <h1>Cart Items</h1>
+        <section id="cartItems">
+
+        </section>
+        <section class="cartSummary">
+            <h2>Total Bill :₹ <span id="totalPrice">0</span></h2>
+            <button id="clear">Clear Cart</button>
+            <button id="checkout">Checkout</button>
+        </section>
+    </main>
+
+
+    <script src="./javascript/cartPage.js"></script>
 </body>
+
 </html>
